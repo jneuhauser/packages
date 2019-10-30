@@ -29,7 +29,7 @@ define Package/libnetwork
   CATEGORY:=Utilities
   TITLE:=networking for containers
   URL:=https://github.com/docker/libnetwork
-  DEPENDS:=$(GO_ARCH_DEPENDS) @TARGET_x86_64
+  DEPENDS:=$(GO_ARCH_DEPENDS) @(TARGET_x86_64||TARGET_imx6)
 endef
 
 define Package/libnetwork/description
